@@ -15,6 +15,7 @@ Proyecto en construcción!
 
 <h3> Acceso al proyecto </h3>
 Puede probar el sistema en:
+https://danibuzzi.github.io/amigo-secreto/
 
 <h3> Tecnologías utlizadas </h3>
 <ul><li>HTML </li>
