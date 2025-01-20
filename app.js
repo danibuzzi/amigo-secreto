@@ -7,10 +7,11 @@
 
 
 /*Declaracion variables almacenar lista de amigos
-seleccion de campo lista de amigos*/
+seleccion de campo lista de amigos y de resultados*/
 
 let amigos = []
 const listaAmigos=document.getElementById("listaAmigos");
+const resultado=document.getElementById("resultado");
 
 //Agregado de amigos a la lista 
 
@@ -66,10 +67,29 @@ function sortearAmigo(){
         let amigoSorteado=Math.floor(Math.random()*amigos.length);
         console.log(amigoSorteado) 
         listaAmigos.innerHTML="";
-        const li=document.createElement('li');
-        li.textContent="Amigo elegido: "+amigos[amigoSorteado];
-        listaAmigos.appendChild(li);
+        
+        resultado.innerHTML=""; 
+        let li=document.createElement('li');
+        li.textContent="El amigo secreto es: "+amigos[amigoSorteado];
+        resultado.appendChild(li);
+        
      
      }   
 
+
+
 }
+    
+/* Pisbles cambios
+   function seleccionLista(lista){
+        const lista=document.getElementById(lista);
+   
+   }
+   
+   functionCrearElementoLista(lista){
+       const li=document.createElement('li');
+       return li;
+   
+   
+   }
+*/
