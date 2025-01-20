@@ -21,7 +21,7 @@ function agregarAmigo(){
 
     //Comprogbacion que hemos ingresado un nombre de amigo 
 
-    if (nombre.value===""){
+    if (nombre.value.trim()===""){
         alert("Por favor inserte un nombre");
 
     }else {
@@ -33,6 +33,7 @@ function agregarAmigo(){
         amigos.push(nombre.value);
         nombre.value="";
         actualizarListaAmigos();
+        nombre.focus();
     }
 }
 
