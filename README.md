@@ -1,29 +1,38 @@
-<h2 align="center"> <b>Challenge amigo secreto para alura</b> </h2>
+<h2 align="center"> <b>Challenge amigo secreto para Alura LATAM</b> </h2>
 
 <h3> Descripción </h3>
-El programa permite ingresar una lista de amigos y sortear un amigo secreto mostrámdolos por pantalla.
+El istema web permite ingresar una lista de amigos y sortear un amigo secreto mostrándolos por pantalla.
 
 <h3> Estado actual </h3>
-Proyecto en construcción! [image](https://github.com/user-attachments/assets/4d444085-ca07-4d6b-899c-f99b3eb90bca)
+Proyecto en construcción! 
 
 
 <h3> Funcionalidades </h3>
-<ul><li>Agregado de nombres de amigos </li>
-<li>Visualizacion de la lista de amigos </li>
-<li>Sorteo aleatorio de un nombre de la lista y muestra por pantalla </li></ul>
+<ul><li><b>Agregado de amigos.</b>  </li>
+<li><b>Visualización de la lista de amigos en pantalla.</b> </li>
+<li><b>Sorteo aleatorio de nombre de amigo y muestra por pantalla.</b> </li></ul>
 
 
 <h3> Acceso al proyecto </h3>
 Puede probar el sistema en:
 
-<h3> Tecnologias utlizadas </h3>
+<h3> Tecnologías utlizadas </h3>
 <ul><li>HTML </li>
 <li>CSS </li>
 <li>Javascript</li></ul>
 
-<h3> Instalacion y configuraciones: </h3>
+<h3> Instalación y configuraciones: </h3>
+Clone el respositorio en su computadora o descargue el archivo zip .Puede abrir los archivos en un editor por ejemplo Visual Studio Code y ejecutar localmente el proyecto (mediante extesion Live Server).
+Para ejecutar de forma remota debe instalar alojar los archivos en  un servidor web y  acceder con el navegador de internet.
+
+<h3> Posibles problemas y soluciones: </h3>
+<ul><li>No se comprueba espacios vacios a ambos lados del texto ingresado ni el agregado de números o caracteres especiales. </li>
+<li>El sorteo es aleatorio y puede devolver el nombre un amigo previamente sorteado durante la ejecucion actual del programa. </li>
+<li>Solo es posible reiniciar el programa refrescando la pantalla del navegador</li></ul>
 
 
-<h3> Desarrollador </h3>
-Daniel Alejandro buzzi  -daniel.buzzi@gmail.com
+
+
+<h3> Desarrollador: </h3>
+Daniel Alejandro buzzi  - daniel.buzzi@gmail.com
 
