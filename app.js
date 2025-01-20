@@ -1,4 +1,10 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
+
+/* 
+   Challenge Alura 
+   Agregado de amigos a una lista y sorteo de amigo elegido
+   Autor: Daniel Alejandro Buzzi
+*/
+
 
 /*Declaracion variables almacenar lista de amigos
 seleccion de campo lista de amigos*/
@@ -9,7 +15,7 @@ const listaAmigos=document.getElementById("listaAmigos");
 //Agregado de amigos a la lista 
 
 function agregarAmigo(){
-    
+
     let nombre=document.getElementById("amigo");
 
     //Comprogbacion que hemos ingresado un nombre de amigo 
@@ -32,9 +38,8 @@ function agregarAmigo(){
 //Actualizacion de la lista de amigos
 
 function actualizarListaAmigos(){
-     console.log("Vector amigos "+amigos);
 
-     //Vaciamos la lista para evitar duplicados y añadimos los amigos  a la lista
+     //Vaciamos la lista para evitar duplicados y añadimos los amigos  a la lista.
   
      listaAmigos.innerHTML=" ";
      for(i=0;i<amigos.length;i++){
