@@ -19,12 +19,20 @@ function agregarAmigo(){
 
     let nombreAmigo=document.getElementById("amigo");
 
-    //Comprogbacion que hemos ingresado un nombre de amigo 
+    //Comprobacion que hemos ingresado un nombre de amigo 
 
     if (!nombreAmigo.value){
         alert("Por favor inserte un nombre de amigo");
         return;
     }
+
+    //Comprobacion que no se ingreso un nombre de amigo repetido
+
+    if (comprobarNombreAmigo(nombreAmigo.value)){
+       alert("Este nombre ya fue ingresado");
+       return;
+
+    } 
 
     /*Se agrega el amigo a la lista y 
     ,borramos la lista evitando duplicados 
@@ -35,6 +43,18 @@ function agregarAmigo(){
         nombreAmigo.focus();
         actualizarListaAmigos();
     
+}
+
+//Validacion repeticion nombre de amigo
+
+function comprobarNombreAmigo(nombre){
+
+  if (amigos.includes(nombre)){
+      return true;
+  }
+  return false;
+     
+
 }
 
 //Actualizacion de la lista de amigos
@@ -74,7 +94,9 @@ function sortearAmigo(){
       resultado.appendChild(li);
         
      
- }   
+ } 
+ 
+ 
 
 
 
