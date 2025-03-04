@@ -17,24 +17,24 @@ const resultado=document.getElementById("resultado");
 
 function agregarAmigo(){
 
-    let nombre=document.getElementById("amigo");
+    let nombreAmigo=document.getElementById("amigo");
 
     //Comprogbacion que hemos ingresado un nombre de amigo 
 
-    if (nombre.value.trim()===""){
-        alert("Por favor inserte un nombre");
-
-    }else {
+    if (!nombreAmigo){
+        alert("Por favor inserte un nombre de amigo");
+        return;
+    }
 
     /*Se agrega el amigo a la lista y 
     ,borramos la lista evitando duplicados 
     y se actualiza la lista de amigos */
        
-        amigos.push(nombre.value);
-        nombre.value="";
+        amigos.push(nombreAmigo.value);
+        nombreAmigo.value="";
         actualizarListaAmigos();
-        nombre.focus();
-    }
+        nombreAmigo.focus();
+    
 }
 
 //Actualizacion de la lista de amigos
