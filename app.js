@@ -21,7 +21,7 @@ function agregarAmigo(){
 
     //Comprogbacion que hemos ingresado un nombre de amigo 
 
-    if (!nombreAmigo){
+    if (!nombreAmigo.value){
         alert("Por favor inserte un nombre de amigo");
         return;
     }
