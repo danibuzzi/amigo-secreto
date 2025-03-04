@@ -32,8 +32,8 @@ function agregarAmigo(){
        
         amigos.push(nombreAmigo.value);
         nombreAmigo.value="";
-        actualizarListaAmigos();
         nombreAmigo.focus();
+        actualizarListaAmigos();
     
 }
 
@@ -45,9 +45,9 @@ function actualizarListaAmigos(){
   
      listaAmigos.innerHTML=" ";
      for(i=0;i<amigos.length;i++){
-        const li=document.createElement('li');
-        li.textContent=amigos[i];
-        listaAmigos.appendChild(li);
+        const item=document.createElement('li');
+        item.textContent=amigos[i];
+        listaAmigos.appendChild(item);
      }
 
 }
@@ -59,38 +59,23 @@ function sortearAmigo(){
     //Comprobacion que haya amigos previamente agregados
 
      if (amigos.length===0){
-        alert("Primero debe ingresar amigos");
-     }else{
+        alert("No hay amigos para sortear");
+        return;
+     }
         
-        /*Sorteo de amigo: elegimos un indice de la lista de amigos al azar, 
-        borramos la lista de amigos y mostramos  el amigo elegido*/
+      /*Sorteo de amigo: elegimos un indice de la lista de amigos al azar, 
+      borramos la lista de amigos y mostramos  el amigo elegido*/
 
-        let amigoSorteado=Math.floor(Math.random()*amigos.length);
-        console.log(amigoSorteado) 
-        listaAmigos.innerHTML="";
-        
-        resultado.innerHTML=""; 
-        let li=document.createElement('li');
-        li.textContent="El amigo secreto es: "+amigos[amigoSorteado];
-        resultado.appendChild(li);
+      let amigoSorteado=Math.floor(Math.random()*amigos.length);
+      listaAmigos.innerHTML="";
+      resultado.innerHTML=""; 
+      let li=document.createElement('li');
+      li.textContent="El amigo secreto es: "+amigos[amigoSorteado];
+      resultado.appendChild(li);
         
      
-     }   
+ }   
 
 
 
-}
-    
-/* Pisbles cambios
-   function seleccionLista(lista){
-        const lista=document.getElementById(lista);
-   
-   }
-   
-   functionCrearElementoLista(lista){
-       const li=document.createElement('li');
-       return li;
-   
-   
-   }
-*/
+
